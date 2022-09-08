@@ -5,7 +5,7 @@ export const Heading = ({
   children = 'testando componente',
   light = false,
   as = 'h1',
-  size = 'big',
+  size = 'huge',
   uppercase = false,
 }) => {
   return (

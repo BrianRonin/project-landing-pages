@@ -4,7 +4,7 @@ import * as S from './styles'
 
 export const NavLinks = ({ Links = [] }) => {
   return (
-    <S.Main>
+    <S.Main aria-label='Main menu'>
       {Links.map((link, index) => (
         <MenuLink key={index} {...link} />
       ))}
@@ -16,7 +16,7 @@ NavLinks.propTypes = {
   Links: P.arrayOf(
     P.shape({
       children: P.string.isRequired,
-      link: P.string.isRequired,
+      Links: P.string.isRequired,
       newTab: P.bool,
     }),
   ),

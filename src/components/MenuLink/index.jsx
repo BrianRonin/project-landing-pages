@@ -11,7 +11,11 @@ export const MenuLink = ({ children, Link, newTab = false }) => {
 }
 
 MenuLink.propTypes = {
-  children: P.node.isRequired,
-  link: P.string.isRequired,
-  newTab: P.bool,
+  links: P.arrayOf(
+    P.shape({
+      children: P.node.isRequired,
+      link: P.string.isRequired,
+      newTab: P.bool,
+    })
+  )
 }

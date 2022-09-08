@@ -25,7 +25,12 @@ export default {
 
 export const Template = (args) => {
   return (
-    <div>
+    <div
+      style={{
+        background: 'gray',
+        height: '300vh',
+      }}
+    >
       <Menu {...args} />
     </div>
   )

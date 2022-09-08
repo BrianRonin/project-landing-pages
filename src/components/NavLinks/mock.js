@@ -5,16 +5,6 @@ export default [
     newTab: false,
   },
   {
-    children: 'Link 1',
-    Link: '#target1',
-    newTab: false,
-  },
-  {
-    children: 'Link 1',
-    Link: '#target1',
-    newTab: false,
-  },
-  {
     children: 'Link 2',
     Link: '#target2',
     newTab: false,

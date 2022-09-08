@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
-export const Main = styled.div`
+export const Main = styled.nav`
   ${({ theme }) => css`
-    background: #fff;
     display: flex;
     flex-flow: row wrap;
 

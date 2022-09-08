@@ -4,7 +4,13 @@ exports[`<Heading /> should to match snapshot 1`] = `
 .c0 {
   color: #0A1128;
   text-transform: none;
-  font-size: 4.0rem;
+  font-size: 6.4rem;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    font-size: 4.0rem;
+  }
 }
 
 <div>
