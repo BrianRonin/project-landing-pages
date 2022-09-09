@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { Title } from '../Heading/styles'
 import { Main as Container } from '../SectionContainer/styles'
-
+import { LogoLink } from '../LogoLink'
 const isMenuVisible = (theme) => css`
   visibility: visible;
   opacity: 1;
@@ -16,9 +16,17 @@ export const Main = styled.div`
     right: 0;
     width: 100%;
     border-bottom: ${theme.colors.mediumGray};
-    background-color: white;
+    background: ${theme.colors.white};
+    transition: all 300ms ease-in-out;
 
+    ${LogoLink} {
+      margin: 0;
+    }
 
+    ${Container} {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     @media ${theme.media.medium} {
       height: 100vh;
       opacity: 0;
@@ -37,7 +45,6 @@ export const Main = styled.div`
         padding-bottom: ${theme.sizes.large};
         display: flex;
         justify-content: center;
-        margin: 0;
       }
     }
   `}
@@ -49,7 +56,6 @@ export const MenuContainer = styled.div`
     align-items: center;
 
     @media ${theme.media.medium} {
-      justify-content: center;
       display: block;
       text-align: center;
       padding: ${theme.spacings.xxlarge} 0;
@@ -68,7 +74,7 @@ export const Button = styled.button`
     color: ${theme.colors.white};
     border: none;
     display: none;
-    pointer-events: ${ visible ? 'none' : 'all'};
+    pointer-events: ${visible ? 'none' : 'all'};
     @media ${theme.media.medium} {
     display: flex;
     align-items: center;

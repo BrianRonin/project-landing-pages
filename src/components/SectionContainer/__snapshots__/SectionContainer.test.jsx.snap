@@ -8,10 +8,10 @@ exports[`<SectionContainer /> should render 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
     teste
-  </div>
+  </section>
 </div>
 `;

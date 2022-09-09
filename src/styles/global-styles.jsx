@@ -13,7 +13,8 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {

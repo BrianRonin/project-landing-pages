@@ -1,13 +1,9 @@
+import { Base } from '../Base'
+import { MockBase } from '../Base/mock'
 import * as Styled from './styles'
 
 function Home() {
-  return (
-    <div className='App'>
-      <Styled.container background='yellow'>
-        <h1>Hello</h1>
-      </Styled.container>
-    </div>
-  )
+  return <Base {...MockBase} />
 }
 
 export default Home

@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components'
 export const Main = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.sizes.medium};
+    padding-top: 5.4rem;
+
+    @media ${theme.media.medium} {
+      padding-top: 0;
+    }
   `}
 `

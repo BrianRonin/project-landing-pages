@@ -27,13 +27,13 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
   <div
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
       <h1>
         teste
       </h1>
-    </div>
+    </section>
   </div>
 </div>
 `;
@@ -63,13 +63,13 @@ exports[`<SectionBackground /> should render with background white 1`] = `
   <div
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
       <h1>
         teste
       </h1>
-    </div>
+    </section>
   </div>
 </div>
 `;

@@ -1,4 +1,4 @@
-export default [
+export const MockNavLinks = [
   {
     children: 'Link 1',
     Link: '#target1',

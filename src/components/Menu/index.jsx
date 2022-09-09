@@ -24,10 +24,7 @@ export const Menu = ({ links = [], logoData }) => {
         )}
       </S.Button>
 
-      <S.Main
-        onClick={() => setMenuVisible(false)}
-        visible={menuVisible}
-      >
+      <S.Main onClick={() => setMenuVisible(false)} visible={menuVisible}>
         <SectionContainer>
           <S.MenuContainer>
             <LogoLink {...logoData} />

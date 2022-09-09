@@ -68,7 +68,7 @@ exports[`<GridImage /> should to match snapshot 1`] = `
   <div
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
       <div
@@ -79,11 +79,11 @@ exports[`<GridImage /> should to match snapshot 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -143,7 +143,7 @@ exports[`<GridImage /> should to match snapshot 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </div>
 `;
