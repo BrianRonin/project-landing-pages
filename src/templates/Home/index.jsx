@@ -21,7 +21,7 @@ const Home = () => {
     const load = async () => {
       try {
         let json = await fetch(
-          `http://brianronin.com.br:1337/api/pages?filters[slug]=${slug}&populate=deep`,
+          `https://api-strapi-landing-pages.herokuapp.com/api/pages?filters[slug]=${slug}&populate=deep`,
         )
         const __data = await json.json()
         const _data = mapData(__data)
