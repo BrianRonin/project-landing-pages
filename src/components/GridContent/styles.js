@@ -4,6 +4,7 @@ export const Main = styled.div`
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    width: 100%;
   `}
 `
 export const Container_Html = styled.div`

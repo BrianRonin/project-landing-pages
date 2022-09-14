@@ -4,11 +4,11 @@ import { Text } from '../Text'
 import { SectionBackground } from '../SectionBackground'
 import { SectionContainer } from '../SectionContainer'
 
-export const Footer = ({ footerHtml, background = false }) => {
+export const Footer = ({ children, background = false }) => {
   return (
     <S.Main>
       <SectionContainer>
-        <Text isHtml={true}>{footerHtml}</Text>
+        <Text isHtml={true}>{children}</Text>
       </SectionContainer>
     </S.Main>
   )

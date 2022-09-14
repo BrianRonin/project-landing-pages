@@ -54,8 +54,10 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 5rem;
 
     @media ${theme.media.medium} {
+      max-height: 100vh;
       display: block;
       text-align: center;
       padding: ${theme.spacings.xxlarge} 0;

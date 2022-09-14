@@ -2,9 +2,13 @@ import * as S from './styles'
 import P from 'prop-types'
 import { SectionContainer } from '../SectionContainer'
 
-export const SectionBackground = ({ children, background }) => {
+export const SectionBackground = ({
+  children,
+  background = false,
+  sectionId = '',
+}) => {
   return (
-    <S.Main background={background}>
+    <S.Main background={background} id={sectionId}>
       <SectionContainer>{children}</SectionContainer>
     </S.Main>
   )
@@ -13,4 +17,5 @@ export const SectionBackground = ({ children, background }) => {
 SectionBackground.propTypes = {
   children: P.node,
   background: P.bool,
+  sectionId: P.string,
 }

@@ -825,11 +825,7 @@ exports[`<Base /> should render 1`] = `
       >
         <div
           class="c16 c17"
-        >
-          <p>
-            footer
-          </p>
-        </div>
+        />
       </section>
     </div>
   </div>

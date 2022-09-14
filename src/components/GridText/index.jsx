@@ -4,10 +4,16 @@ import { SectionBackground } from '../SectionBackground'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 
-export const GridText = ({ title, description, grid, background = false }) => {
+export const GridText = ({
+  title,
+  description,
+  grid,
+  background = false,
+  id = '',
+}) => {
   return (
     <S.Main>
-      <SectionBackground background={background}>
+      <SectionBackground background={background} sectionId={id}>
         <Heading size='huge' uppercase light={background} as='h2'>
           {title}
         </Heading>
@@ -37,4 +43,5 @@ GridText.propTypes = {
       description: P.string.isRequired,
     }),
   ).isRequired,
+  id: P.string,
 }

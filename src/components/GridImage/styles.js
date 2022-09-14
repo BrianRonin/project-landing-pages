@@ -12,14 +12,20 @@ export const Grid = styled.div`
   ${({ theme }) => css`
     counter-reset: grid-counter;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     gap: ${theme.spacings.large};
+    width: 100%;
+
+    @media ${theme.media.medium} {
+      grid-template-columns: 1fr;
+    } ;
   `}
 `
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
     overflow: hidden;
+    max-width: 100%;
   `}
 `
 

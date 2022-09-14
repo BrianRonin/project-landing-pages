@@ -3,7 +3,7 @@ import { mapMenu } from './map-menu'
 
 describe('map-menu', () => {
   it('should return a predefined object if no data', () => {
-    const menu = mapMenu()
+    const menu = mapMenu('')
     expect(menu.link).toEqual('')
     expect(menu.text).toBe('')
   })

@@ -39,4 +39,13 @@ ul {
   margin: ${({ theme }) => theme.spacings.medium};
   padding: ${({ theme }) => theme.spacings.medium};
 }
+
+table {
+  width: 100%;
+  overflow-y: auto;
+}
+
+code, pre {
+  width: 100vw;
+}
 `

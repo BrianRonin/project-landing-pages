@@ -12,7 +12,7 @@ export const mapMenu = (Menu = {}) => {
   return {
     link,
     text,
-    srcImage: mapImage(image),
+    srcImg: mapImage(image),
     links: mapMenuLinks(links),
   }
 }

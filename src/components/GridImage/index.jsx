@@ -4,9 +4,15 @@ import { SectionBackground } from '../SectionBackground'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 
-export const GridImage = ({ background, description, title, grid }) => {
+export const GridImage = ({
+  background,
+  description,
+  title,
+  grid,
+  id = '',
+}) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={id}>
       <S.Main>
         <Heading size='huge' uppercase light={background} as='h2'>
           {title}
@@ -15,7 +21,7 @@ export const GridImage = ({ background, description, title, grid }) => {
         <S.Grid>
           {grid.map((element, i) => (
             <S.GridElement key={i}>
-              <S.Image src={element.srcImg} alt={element.altText} />
+              <S.Image src={element} />
             </S.GridElement>
           ))}
         </S.Grid>
@@ -25,8 +31,8 @@ export const GridImage = ({ background, description, title, grid }) => {
 }
 
 GridImage.propTypes = {
-  background: P.bool,
-  description: P.string.isRequired,
+  background: P.oneOf([P.bool, undefined]),
+  description: P.oneOf[(P.string, undefined)],
   title: P.string.isRequired,
   grid: P.arrayOf(
     P.shape({
@@ -34,4 +40,5 @@ GridImage.propTypes = {
       srcImg: P.string.isRequired,
     }),
   ).isRequired,
+  id: P.string,
 }
